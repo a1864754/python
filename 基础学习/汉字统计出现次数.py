@@ -7,3 +7,4 @@ for i in achars:
         tongji[i] = achars.count(i)
 print(sorted(tongji.items(), key=lambda item: item[1]))
 print(0)
+print(111)
