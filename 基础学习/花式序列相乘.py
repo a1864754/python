@@ -1,0 +1,8 @@
+a = input("请输入第一个序列,以空格为间隔: ").split()
+b = input("请输入第二个序列,以空格为间隔: ").split()
+c = input("请输入第三个序列,以空格为间隔: ").split()
+a = list(map(int, a))
+b = list(map(int, b))
+c = list(map(int, c))
+d = max(a) * max(b) * max(c)
+print("最大值为: ", d)
