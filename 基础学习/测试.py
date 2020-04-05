@@ -1,6 +1,1 @@
-import random
-
-for i in range(10):
-    s = random.sample(range(1, 21), 4)
-    s.sort()
-    print(s)
+print(0.061 + 0.028 + 0.011 + 0.004 + 0.001)
