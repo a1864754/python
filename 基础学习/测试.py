@@ -1,1 +1,1 @@
-print(0.061 + 0.028 + 0.011 + 0.004 + 0.001)
+print('I {} Python'.replace('{}', 'like'))
