@@ -19,6 +19,7 @@ def countString(a):
 
 
 a = input('请输入一个字符串：')
-daZimu, xiaoZiMu, shuZi, ziFu = countString(a)
-print("在输入的字符串中\n大写字母有{0}个\n小写字母有{1}个\n数字有{2}个\n其他字符有{3}个"
-      .format(daZimu, xiaoZiMu, shuZi, ziFu))
+daZiMu, xiaoZiMu, shuZi, ziFu = countString(a)
+
+print("在输入的字符串中\n大写字母有{0}个;小写字母有{1}个;数字有{2}个;其他字符有{3}个"
+      .format(daZiMu, xiaoZiMu, shuZi, ziFu))

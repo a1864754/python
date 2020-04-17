@@ -4,8 +4,11 @@
 str1 = input("请输入一串字符: ")
 str2 = ""
 for i in str1:
-    i = ord(i)
-    i = i + 1
-    i = chr(i)
-    str2 += i
+    if i.isalpha():
+        i = ord(i)
+        i = i + 1
+        i = chr(i)
+        str2 += i
+    else:
+        str2 += i
 print(str2)
