@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="book_manager@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.17">
+    <root id="1"/>
+    <schema id="2" parent="1" name="book_manager">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="bookstore"/>
+    <schema id="4" parent="1" name="book_manager_show"/>
+    <schema id="5" parent="1" name="demo100"/>
+    <schema id="6" parent="1" name="django_demo"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="jing_dong"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="p24"/>
+    <schema id="11" parent="1" name="p25"/>
+    <schema id="12" parent="1" name="p26"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="python20"/>
+    <schema id="15" parent="1" name="python212"/>
+    <schema id="16" parent="1" name="python22_new"/>
+    <schema id="17" parent="1" name="python25"/>
+    <schema id="18" parent="1" name="python27"/>
+    <schema id="19" parent="1" name="python28"/>
+    <schema id="20" parent="1" name="python29"/>
+    <schema id="21" parent="1" name="python_1"/>
+    <schema id="22" parent="1" name="python_test_1"/>
+    <schema id="23" parent="1" name="stock_db"/>
+    <schema id="24" parent="1" name="sys"/>
+  </database-model>
+</dataSource>
