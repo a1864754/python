@@ -1,3 +1,4 @@
+import asyncio
 import json
 
 import tornado.ioloop
@@ -15,36 +16,11 @@ class MainHandler(tornado.web.RequestHandler):
     # 	self.write(content)  # 返回网页内容,专门处理文字,
 
     # 专门用来显示模板内容的
-    def get(self):
-        print("get请求开始")
-        # 1.读取数据库的数据
-        # 2.把数据库的数据传给模板
-        # 3.模板中渲染我们的数据
-
-        # 1.读取数据库的数据
-        # 1. 从数据库得到数据
-        # 1.1连接数据库
-        # 创建Connection连接
-        conn = connect(host='localhost', port=3306, database='book_manager', user='root', password='mysql',
-                       charset='utf8')
-        # 获得Cursor对象
-        cs1 = conn.cursor()
-
-        for temp in range(10000):
-            # 1.2 执行查询的sql语句
-            cs1.execute("select * from books;")
-            # 得到数据库的数据
-            data = cs1.fetchall()
-
-        # 1.3 关闭
-        cs1.close()
-        conn.close()
-
-        # print(data)
-        # 2.把数据库的数据传给模板
-        # 3.模板中渲染我们的数据
-
-        self.render("index.html", show_list=data)
+    # python3.5
+    async def get(self):
+        print('get')
+        await asyncio.sleep(3)
+        self.write("返回内容")
 
     def post(self):
         # 1.得到前端的数据
@@ -169,8 +145,8 @@ def make_app():
     return tornado.web.Application([
         (r"/books/", MainHandler),  # 路由
     ],
-        static_path='./static',  # 静态文件夹路径
-        template_path="./templates"  # 模板路径
+        static_path='static',  # 静态文件夹路径
+        template_path="templates"  # 模板路径
     )
 
 

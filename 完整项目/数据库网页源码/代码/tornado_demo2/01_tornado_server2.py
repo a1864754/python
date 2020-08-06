@@ -30,8 +30,8 @@ def make_app():
     return tornado.web.Application([
         (r"/books/", MainHandler),  # 路由
     ],
-        static_path='./static',  # 静态文件夹路径
-        template_path="./templates"  # 模板路径
+        static_path='static',  # 静态文件夹路径
+        template_path="templates"  # 模板路径
     )
 
 
